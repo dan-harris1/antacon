@@ -71,7 +71,7 @@ body {
   font-family: "Open Sans", sans-serif;
   line-height: 1;
   font-weight: 400;
-  color: #2e0d02;
+  color: #fff;
 
   /* Only works if there is nothing absolutely positioned in relation to body */
   overflow-x: hidden;
@@ -112,11 +112,7 @@ a {
 }
 
 .section-hero {
-  background-image: linear-gradient(
-      to right bottom,
-      rgba(235, 151, 78, 0.35),
-      rgba(230, 125, 34, 0.35)
-    ),
+  background-image: linear-gradient(rgb(46, 13, 2, 0.5), rgb(46, 13, 2, 0.5)),
     url(./img/hero.jpg);
   background-size: cover;
   min-height: 600px;
@@ -134,8 +130,6 @@ a {
   font-weight: 700;
   line-height: 1.05;
   margin-bottom: 3.2rem;
-  color: #2e0d02;
-  letter-spacing: -0.5px;
 }
 
 .hero-description {
@@ -175,6 +169,11 @@ a {
 
 .hero-btn--pricing:link,
 .hero-btn--pricing:visited {
-  color: #2e0d02;
-  background-color: #fff;
+  background-color: transparent;
+}
+
+.hero-btn--pricing:hover,
+.hero-btn--pricing:active {
+  border: 1px solid #a72f09;
+  background-color: #a72f09;
 }
